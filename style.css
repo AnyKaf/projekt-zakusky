@@ -44,3 +44,85 @@ body {
   margin-block: 0;
 }
 
+.content{
+    margin: auto;
+}
+
+.karta{
+    display: block;
+    margin: auto;
+    border-radius: var(--radius);
+    margin-bottom: 30px;
+}
+.text h2{
+    font-size: 24px;
+    line-height: 1.25;
+}
+
+.text p{
+    font-size: 15px;
+}
+
+.karta img{
+    display: block;
+    border-radius: var(--radius) var(--radius) 0 0;
+    width: 100%;
+}
+
+.karta:nth-child(1){
+    box-shadow: 0 0 20px var(--strawberry-shadow-color);
+}
+.karta:nth-child(2){
+    box-shadow: 0 0 20px var(--cupcake-shadow-color);
+}
+.karta:nth-child(3){
+    box-shadow: 0 0 20px var(--matcha-shadow-color);
+}
+.karta:nth-child(4){
+        box-shadow: 0 0 20px var(--tiramisu-shadow-color);
+        margin-bottom: 0;
+}
+
+.text{
+    padding: 0 20px 5px 20px;
+}
+
+.karta p{
+    color: var(--description-color)
+}
+    /* ----- tady styluju "tablet" ------ */
+@media(min-width: 660px){
+    .content{
+        max-width: 700px;
+    }
+    .karta{
+        display: flex;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+    .karta img{
+        border-radius: 10px 0 0 10px;
+        flex-shrink: 0;
+        flex-basis: 30%;
+    }
+}
+
+    /* ----- tady styluju "pocitac" ----- */
+@media(min-width: 1100px){
+    .content{
+        max-width: 100%;
+    }
+    .karta{
+        display: block;
+        margin: 0;
+        flex-shrink: 1;
+        flex-grow: 1;
+    }
+    .content{
+        display: flex;
+        gap: 20px;
+    }
+    .karta img{
+        border-radius: 10px 10px 0 0;
+    }
+}
