@@ -1,0 +1,46 @@
+html { box-sizing: border-box; }
+*, ::before, ::after { box-sizing: inherit; }
+
+:root {
+  --padding: 20px;  /* padding pro popisek zákusku */
+  --desert-spacing: 30px;  /* rozestup mezi zákusky */
+  --radius: 12px; /* zakulacení rohů kartičky */
+
+  --page-bg-color: #f9f9f7;
+
+  --description-color: #888880; /* popis zákusku */
+
+  /* barvy stínů pro jednotlivé zákusky */
+  --strawberry-shadow-color: #e4b0a5a0;
+  --cupcake-shadow-color: #947293a0;
+  --matcha-shadow-color: #8dae7fa0;
+  --tiramisu-shadow-color: #bc906da0;
+}
+
+body {
+  padding: var(--padding);
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  background: var(--page-bg);
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header__title {
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-size: 4rem;
+  text-align: center;
+  margin-block: 0;
+}
+
+.header__text {
+  font-size: 18px;
+  color: var(--description-color);
+  margin-block: 0;
+}
+
